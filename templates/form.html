@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            margin: 50px;
+        }
+        form {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+        button {
+            background-color: white;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <label for="job_title">Job Title:</label><br>
+        <input type="text" id="job_title" name="job_title" required><br>
+        <label for="city_name">City Name:</label><br>
+        <input type="text" id="city_name" name="city_name" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
